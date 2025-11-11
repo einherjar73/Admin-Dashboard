@@ -86,8 +86,8 @@ body {
   grid-template-rows: 1fr 1.5fr;
 }
 
-.header img {
-  width: 40px;
+.search-side img {
+  width: 50px;
 }
 
 .main-content {
@@ -97,17 +97,59 @@ body {
 
 .search-side {
   display: flex;
-  gap: 50px;
+  gap: 40px;
   align-items: center;
-  padding-top: 20px;
+  /* padding-top: 20px; */
   padding-left: 50px;
 }
 
 #search {
-  background-color: rgb(230, 226, 226);
+  background-color: rgb(216, 228, 232);
   border: none;
   border-radius: 50px;  
   width: 70%;
-  height: 40px;
+  height: 50px;
   flex: 1;
+  font-size: 20px;
+  padding-left: 20px;
+  outline: none;  
+}
+
+.bell-side {
+  display: flex;
+  /* padding-left: 150px; */
+  flex-shrink: 1;
+  align-items: center;
+  justify-content: center;
+  gap: calc(3px + 1vw);
+}
+
+.bell-side > img {
+  width: 50px;
+}
+
+.bell {
+  width: 50px;
+  height: 50px;
+  background-color: inherit;
+  border: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+.neko {
+  border-radius: 100%;
+  overflow: hidden;
+  width: 90px;
+  height: 90px;
+  border: none; 
+  background-color: initial; 
+}
+
+.neko img {
+  width: 90px;
+  height: 90px;
+  margin-left: -7px;
 }
