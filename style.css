@@ -147,7 +147,7 @@ button:active {
   transform: scale(1.03);
 }
 
-.neko {
+.neko, .inu, .snail, .gamakichi {
   flex-shrink: 0;
   border-radius: 50%;
   overflow: hidden;
@@ -157,7 +157,7 @@ button:active {
   background-color: initial;
 }
 
-.neko img {
+.neko img, .inu img, .snail img, .gamakichi img {
   width: 50px;
   height: 50px;
   margin-left: -6px;
@@ -224,10 +224,9 @@ button:active {
 .main-content {
   background-color: rgb(227, 228, 228);
   grid-area: 2 / 2 / 3 / 3;
-}
-
-.main-content-container {
   padding: 35px 0px 0px 20px;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
 }
 
 h3 {
@@ -286,4 +285,75 @@ h3 {
 
 .card div img:active {
   transform: scale(1.1);
+}
+
+.right-side {
+  margin: 0 0 0 30px;  
+}
+
+.announcement-card, .trending-card {
+  width: 230px;
+  height: 270px;
+  background-color: white;
+  margin-top: 15px;
+  border-radius: 8px;
+  padding: 25px 25px 5px 25px;
+  box-shadow: 3px 5px 8px -3px gray; 
+}
+
+.announcement-card p {
+  margin: 0;  
+}
+
+.description {
+  font-size: 0.7rem;
+  color: gray;  
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.topic {
+  font-size: 0.9rem;
+  font-weight: bold;
+}
+
+hr {
+  margin: 15px 0 15px 0;
+  opacity: 40%;;
+}
+
+.trending {
+  margin-top: 30px;
+}
+
+.trending-card {
+  margin-top: 8px;
+  display: grid;
+  grid-template-columns: 60px 150px;
+  grid-template-rows: 60px 60px 60px 60px;
+  gap: 5px;
+}
+
+.snail {
+  object-fit: contain;
+  width: 150%;
+  height: 150%;
+}
+
+.trending-card button, .trending-card img {
+  width: 45px;
+  height: 45px;
+}
+
+.trending-card div p {
+  margin: 0;
+}
+
+.trending-card div p:first-child {
+  font-size: 0.9rem;
+}
+
+.trending-card div p:nth-child(2) {
+  color: gray;
+  font-size: 0.87rem;
 }

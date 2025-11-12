@@ -1,135 +1,221 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Admin Dashboard</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-</head>
-<body>
-  <div class="container">
-    <div class="sidebar">      
-      <img class="dashboard sidebar-logo" src="./img/dashboard.svg" alt="dashboard logo">
-      <p class="dashboard">Dashboard</p>      
-      <img class="sidebar-logo" src="./img/home.svg" alt="home logo">
-      <p>Home</p>
-      <img class="sidebar-logo" src="./img/profile.svg" alt="profile logo">
-      <p>Profile</p>
-      <img class="sidebar-logo" src="./img/message.svg" alt="messages logo">
-      <p>Messages</p>
-      <img class="sidebar-logo" src="./img/history.svg" alt="history logo">
-      <p>History</p>
-      <img class="sidebar-logo" src="./img/tasks.svg" alt="tasks logo">
-      <p>Tasks</p>
-      <img class="sidebar-logo" src="./img/community.svg" alt="community logo">
-      <p>Communities</p>
-      <img class="settings-img sidebar-logo" src="./img/settings.svg" alt="settings logo">
-      <p class="settings-text">Settings</p>
-      <img class="support-img sidebar-logo" src="img/support.svg" alt="support logo">
-      <p class="support-text">Support</p>
-      <img class="privacy-img sidebar-logo" src="./img/privacy.svg" alt="privacy logo">
-      <p class="privacy-text">Privacy</p>
-    </div>
-
-    <div class="header">
-      <form class="search-side" action="">
-        <label for="search"><img src="./img/search.svg" alt="search logo">
-        </label>
-        <input id="search" type="search">
-      </form>
-      
-      <div class="bell-side">
-        <button class="bell">
-          <img src="./img/bell.svg" alt="bell logo">
-        </button>
-        <button class="neko">
-          <img src="./img/nekomamushi.png" alt="nekomamushi pic">
-        </button>
-        <p>Morgan Oakley</p>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <div class="sidebar">
+        <img
+          class="dashboard sidebar-logo"
+          src="./img/dashboard.svg"
+          alt="dashboard logo"
+        />
+        <p class="dashboard">Dashboard</p>
+        <img class="sidebar-logo" src="./img/home.svg" alt="home logo" />
+        <p>Home</p>
+        <img class="sidebar-logo" src="./img/profile.svg" alt="profile logo" />
+        <p>Profile</p>
+        <img class="sidebar-logo" src="./img/message.svg" alt="messages logo" />
+        <p>Messages</p>
+        <img class="sidebar-logo" src="./img/history.svg" alt="history logo" />
+        <p>History</p>
+        <img class="sidebar-logo" src="./img/tasks.svg" alt="tasks logo" />
+        <p>Tasks</p>
+        <img
+          class="sidebar-logo"
+          src="./img/community.svg"
+          alt="community logo"
+        />
+        <p>Communities</p>
+        <img
+          class="settings-img sidebar-logo"
+          src="./img/settings.svg"
+          alt="settings logo"
+        />
+        <p class="settings-text">Settings</p>
+        <img
+          class="support-img sidebar-logo"
+          src="img/support.svg"
+          alt="support logo"
+        />
+        <p class="support-text">Support</p>
+        <img
+          class="privacy-img sidebar-logo"
+          src="./img/privacy.svg"
+          alt="privacy logo"
+        />
+        <p class="privacy-text">Privacy</p>
       </div>
-      
-      <div class="name-side">
-        <button class="neko">
-          <img src="./img/nekomamushi.png" alt="nekomamushi pic">
-        </button>        
-        <div class="name-hi">
-          <p>Hi there,</p>
-          <p>Morgan Oakley (@morgan)</p>
+
+      <div class="header">
+        <form class="search-side" action="">
+          <label for="search"
+            ><img src="./img/search.svg" alt="search logo" />
+          </label>
+          <input id="search" type="search" />
+        </form>
+
+        <div class="bell-side">
+          <button class="bell">
+            <img src="./img/bell.svg" alt="bell logo" />
+          </button>
+          <button class="neko">
+            <img src="./img/nekomamushi.png" alt="nekomamushi pic" />
+          </button>
+          <p>Nekomamushi</p>
+        </div>
+
+        <div class="name-side">
+          <button class="neko">
+            <img src="./img/nekomamushi.png" alt="nekomamushi pic" />
+          </button>
+          <div class="name-hi">
+            <p>Hi there,</p>
+            <p>Nekomamushi (@neko)</p>
+          </div>
+        </div>
+        <div class="buttons">
+          <button>New</button>
+          <button>Upload</button>
+          <button>Share</button>
         </div>
       </div>
-      <div class="buttons">
-        <button>New</button>
-        <button>Upload</button>
-        <button>Share</button>
-      </div>
-    </div>
 
-    <div class="main-content">
-      <div class="main-content-container">
-        <h3>
-          Your Projects
-        </h3>
-        <div class="card-container">
-          <div class="card">
-            <p>Super Cool Project</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur sunt, impedit, natus odit porro aperiam nulla corrupti vitae excepturi.</p>
-            <div>
-              <img src="./img/star.svg" alt="star logo">
-              <img src="./img/eye.svg" alt="eye logo">
-              <img src="./img/share.svg" alt="share logo">
+      <div class="main-content">
+        <div>
+          <h3>Your Projects</h3>
+          <div class="card-container">
+            <div class="card">
+              <p>Super Cool Project</p>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Consequuntur sunt, impedit, natus odit porro aperiam nulla
+                corrupti vitae excepturi.
+              </p>
+              <div>
+                <img src="./img/star.svg" alt="star logo" />
+                <img src="./img/eye.svg" alt="eye logo" />
+                <img src="./img/share.svg" alt="share logo" />
+              </div>
+            </div>
+            <div class="card">
+              <p>Less Cool Project</p>
+              <p>
+                Etiam ac justo in odio mollis placerat. Integer ipsum turpis,
+                venenatis quis tristique id, scelerisque a eros. .
+              </p>
+              <div>
+                <img src="./img/star.svg" alt="star logo" />
+                <img src="./img/eye.svg" alt="eye logo" />
+                <img src="./img/share.svg" alt="share logo" />
+              </div>
+            </div>
+            <div class="card">
+              <p>Impossible App</p>
+              <p>
+                Cras pharetra maximus diam non tempus. Vivamus vehicula id nibh
+                sed varius. Nulla feugiat quam nec nisi feugiat molestie.
+              </p>
+              <div>
+                <img src="./img/star.svg" alt="star logo" />
+                <img src="./img/eye.svg" alt="eye logo" />
+                <img src="./img/share.svg" alt="share logo" />
+              </div>
+            </div>
+            <div class="card">
+              <p>Easy Peasy App</p>
+              <p>
+                Proin luctus, ex id feugiat efficitur, ante eros posuere orci, a
+                cursus tellus ex eget urna. Sed ut arcu a magna mattis finibus.
+              </p>
+              <div>
+                <img src="./img/star.svg" alt="star logo" />
+                <img src="./img/eye.svg" alt="eye logo" />
+                <img src="./img/share.svg" alt="share logo" />
+              </div>
+            </div>
+            <div class="card">
+              <p>Ad Blocker</p>
+              <p>
+                uspendisse sodales magna et volutpat posuere. Integer
+                pellentesque ultrices molestie. Praesent mauris sapien, dapibus
+                et hendrerit at, porttitor non lectus.
+              </p>
+              <div>
+                <img src="./img/star.svg" alt="star logo" />
+                <img src="./img/eye.svg" alt="eye logo" />
+                <img src="./img/share.svg" alt="share logo" />
+              </div>
+            </div>
+            <div class="card">
+              <p>Money Maker</p>
+              <p>
+                Quisque pretium ultricies velit, ut ultrices leo imperdiet id.
+                In varius, augue ut mattis mattis.
+              </p>
+              <div>
+                <img src="./img/star.svg" alt="star logo" />
+                <img src="./img/eye.svg" alt="eye logo" />
+                <img src="./img/share.svg" alt="share logo" />
+              </div>
             </div>
           </div>
-          <div class="card">
-            <p>Less Cool Project</p>
-            <p>Etiam ac justo in odio mollis placerat. Integer ipsum turpis, venenatis quis tristique id, scelerisque a eros. .</p> 
+        </div>
+        <div class="right-side">
+          <h3>Announcement</h3>
+          <div class="announcement-card">
+            <p class="topic">Site Maintenance</p>
+            <p class="description">Fusce id erat erat. Vivamus ligula nibh, egestas et posuere sit amet, tempor ac magna. Sed eu lobortis orci. Nunc tellus dui, pellentesque nec orci nec, interdum tempus lorem.</p>            
+            <hr>            
+            <p class="topic">Community Share Day</p>
+            <p class="description">Aenean quis nunc odio. Duis et felis vel tortor consequat vestibulum.</p>            
+            <hr>            
+            <p class="topic">Updated Privacy Policy</p>
+            <p class="description"> Vivamus sed feugiat nulla. Pellentesque et urna at ipsum feugiat rutrum.</p>
+          </div>
+          <h3 class="trending">Trending</h3>
+          <div class="trending-card">
+            <button class="neko">
+              <img src="./img/nekomamushi.png" alt="nekomamushi pic" />
+            </button>
             <div>
-              <img src="./img/star.svg" alt="star logo">
-              <img src="./img/eye.svg" alt="eye logo">
-              <img src="./img/share.svg" alt="share logo">
+              <p>@neko</p>
+              <p>Master Viper Cat</p>
+            </div>
+            <button class="inu">
+              <img src="./img/inuarashi.webp" alt="inuarashi pic" />
+            </button>
+            <div>
+              <p>@inu</p>
+              <p>Duke Dogstorm</p>
+            </div>
+            <button class="snail">
+              <img src="./img/katsuyu.jpg" alt="snail pic" />
+            </button>
+            <div>
+              <p>@katsuyu</p>
+              <p>Super Cool Snail</p>
+            </div>
+            <button class="gamakichi">
+              <img src="./img/gamakichi.webp" alt="frog pic" />
+            </button>
+            <div>
+              <p>@gamakichi</p>
+              <p>Super Cool Frog</p>
             </div>
           </div>
-          <div class="card">
-            <p>Impossible App</p>
-            <p>Cras pharetra maximus diam non tempus. Vivamus vehicula id nibh sed varius. Nulla feugiat quam nec nisi feugiat molestie.</p>
-            <div>
-              <img src="./img/star.svg" alt="star logo">
-              <img src="./img/eye.svg" alt="eye logo">
-              <img src="./img/share.svg" alt="share logo">
-            </div>
-          </div>
-          <div class="card">
-            <p>Easy Peasy App</p>
-            <p>Proin luctus, ex id feugiat efficitur, ante eros posuere orci, a cursus tellus ex eget urna. Sed ut arcu a magna mattis finibus.</p>
-            <div>
-              <img src="./img/star.svg" alt="star logo">
-              <img src="./img/eye.svg" alt="eye logo">
-              <img src="./img/share.svg" alt="share logo">
-            </div>
-          </div>
-          <div class="card">
-            <p>Ad Blocker</p>
-            <p>uspendisse sodales magna et volutpat posuere. Integer pellentesque ultrices molestie. Praesent mauris sapien, dapibus et hendrerit at, porttitor non lectus.</p>
-            <div>
-              <img src="./img/star.svg" alt="star logo">
-              <img src="./img/eye.svg" alt="eye logo">
-              <img src="./img/share.svg" alt="share logo">
-            </div>
-          </div>
-          <div class="card">
-            <p>Money Maker</p>
-            <p>Quisque pretium ultricies velit, ut ultrices leo imperdiet id. In varius, augue ut mattis mattis.</p>
-            <div>
-              <img src="./img/star.svg" alt="star logo">
-              <img src="./img/eye.svg" alt="eye logo">
-              <img src="./img/share.svg" alt="share logo">
-            </div>
-          </div>          
         </div>
       </div>
     </div>
-  </div>
-</body>
+  </body>
 </html>
