@@ -97,7 +97,7 @@ body {
 }
 
 .search-side img {
-  width: 30px;
+  width: 23px;
 }
 
 .search-side {
@@ -222,7 +222,7 @@ button:active {
 }
 
 .main-content {
-  background-color: rgb(240, 236, 236);
+  background-color: rgb(227, 228, 228);
   grid-area: 2 / 2 / 3 / 3;
 }
 
@@ -247,10 +247,43 @@ h3 {
   background-color: white;
   width: 350px;
   height: 200px;
-  border-radius: 10px;
-  box-shadow: 0px 5px 8px -3px gray;
+  border-radius: 8px;
+  box-shadow: 0px 5px 8px -3px gray; 
+  border-left: orange 8px solid;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  position: relative;
 }
 
-.card:active {
-  transform: scale(1.005);
+.card p {
+  margin: 30px 0 0 20px ;
+}
+
+.card p:first-child{
+  font-weight: 600;
+  font-size: 1.1rem;
+}
+
+.card p:nth-child(2) {
+  color: gray;
+  margin: 0 0 0 20px;
+}
+
+.card div {
+  display: flex;
+  gap: 25px;
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+}
+
+.card div img {
+  cursor: pointer;
+  width: 23px;
+  opacity: 80%;
+}
+
+.card div img:active {
+  transform: scale(1.1);
 }
