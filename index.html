@@ -5,13 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Admin Dashboard</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 </head>
 <body>
   <div class="container">
     <div class="sidebar">      
       <img class="dashboard sidebar-logo" src="./img/dashboard.svg" alt="dashboard logo">
       <p class="dashboard">Dashboard</p>      
-      <img class="sidebar-logo" class="" src="./img/home.svg" alt="home logo">
+      <img class="sidebar-logo" src="./img/home.svg" alt="home logo">
       <p>Home</p>
       <img class="sidebar-logo" src="./img/profile.svg" alt="profile logo">
       <p>Profile</p>
@@ -31,9 +34,9 @@
       <p class="privacy-text">Privacy</p>
     </div>
 
-    <div class="header">      
+    <div class="header">
       <form class="search-side" action="">
-        <label for="search"><img for="search" src="./img/search.svg" alt="search logo">
+        <label for="search"><img src="./img/search.svg" alt="search logo">
         </label>
         <input id="search" type="search">
       </form>
@@ -45,14 +48,39 @@
         <button class="neko">
           <img src="./img/nekomamushi.png" alt="nekomamushi pic">
         </button>
+        <p>Morgan Oakley</p>
       </div>
       
-      <div class="name-side"></div>
-      <div class="buttons"></div>
+      <div class="name-side">
+        <button class="neko">
+          <img src="./img/nekomamushi.png" alt="nekomamushi pic">
+        </button>        
+        <div class="name-hi">
+          <p>Hi there,</p>
+          <p>Morgan Oakley (@morgan)</p>
+        </div>
+      </div>
+      <div class="buttons">
+        <button>New</button>
+        <button>Upload</button>
+        <button>Share</button>
+      </div>
     </div>
 
     <div class="main-content">
-
+      <div class="main-content-container">
+        <h3>
+          Your Projects
+        </h3>
+        <div class="card-container">
+          <div class="card"></div>
+          <div class="card"></div>
+          <div class="card"></div>
+          <div class="card"></div>
+          <div class="card"></div>
+          <div class="card"></div>          
+        </div>
+      </div>
     </div>
   </div>
 </body>
